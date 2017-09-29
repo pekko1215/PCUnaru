@@ -6,9 +6,12 @@
 
   "content_scripts": [
     {
-      "matches": ["http://pc-play.games.dmm.co.jp/play/imys_r"],
-      "js": ["index.js"]
+      "matches": ["http://osapi.dmm.com/gadgets/ifr*"],
+      "js": ["index.js"],
+      "all_frames": true,
+      "run_at":"document_start"
     }
-  ]
+  ],
+  "permissions":["webNavigation"]
 
 }
