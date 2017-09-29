@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "PCUnaru",
+  "description": "ページ開くとめっちゃPCうなるんだが仕様？",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://pc-play.games.dmm.co.jp/play/imys_r"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
